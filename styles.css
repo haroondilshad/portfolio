@@ -1,0 +1,294 @@
+:root {
+    --bg: #ffffff;
+    --text: #2c3e50;
+    --accent: #3498db;
+    --secondary-bg: #f8f9fa;
+    --border: #eaeaea;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #1a1a1a;
+        --text: #f0f0f0;
+        --accent: #61dafb;
+        --secondary-bg: #2d2d2d;
+        --border: #404040;
+    }
+}
+
+[data-theme="light"] {
+    --bg: #ffffff;
+    --text: #2c3e50;
+    --accent: #3498db;
+    --secondary-bg: #f8f9fa;
+    --border: #eaeaea;
+}
+
+[data-theme="dark"] {
+    --bg: #1a1a1a;
+    --text: #f0f0f0;
+    --accent: #61dafb;
+    --secondary-bg: #2d2d2d;
+    --border: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.theme-switch {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: var(--secondary-bg);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sun-icon, .moon-icon {
+    fill: var(--text);
+    width: 24px;
+    height: 24px;
+}
+
+[data-theme="dark"] .sun-icon,
+[data-theme="light"] .moon-icon {
+    display: none;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.title {
+    font-size: 1.25rem;
+    color: var(--text);
+    opacity: 0.8;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--secondary-bg);
+    transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+}
+
+.social-link svg {
+    fill: var(--text);
+    width: 20px;
+    height: 20px;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--secondary-bg);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.duration {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.skill-category {
+    margin-bottom: 1.5rem;
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.skill-category p {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.education article {
+    margin-bottom: 1.5rem;
+}
+
+.education article:last-child {
+    margin-bottom: 0;
+}
+
+.pdf-viewer {
+    margin-bottom: 2rem;
+}
+
+.toggle-pdf-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--secondary-bg);
+    border: none;
+    border-radius: 8px;
+    color: var(--text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.toggle-pdf-btn:hover {
+    background: var(--border);
+}
+
+.toggle-pdf-btn .chevron-icon {
+    fill: var(--text);
+    transition: transform 0.3s ease;
+}
+
+.toggle-pdf-btn[aria-expanded="true"] .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.toggle-pdf-btn .hide-text {
+    display: none;
+}
+
+.toggle-pdf-btn[aria-expanded="true"] .show-text {
+    display: none;
+}
+
+.toggle-pdf-btn[aria-expanded="true"] .hide-text {
+    display: inline;
+}
+
+.pdf-container {
+    margin-top: 1rem;
+    width: 100%;
+    background: var(--secondary-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.pdf-container[hidden] {
+    display: none;
+}
+
+.pdf-container embed {
+    display: block;
+    border: none;
+    background: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+} 
