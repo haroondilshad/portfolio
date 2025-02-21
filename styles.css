@@ -4,6 +4,8 @@
     --accent: #3498db;
     --secondary-bg: #f8f9fa;
     --border: #eaeaea;
+    --text-primary: #2c3e50;
+    --text-secondary: #34495e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +15,8 @@
         --accent: #61dafb;
         --secondary-bg: #2d2d2d;
         --border: #404040;
+        --text-primary: #ecf0f1;
+        --text-secondary: #bdc3c7;
     }
 }
 
@@ -290,5 +294,58 @@ li {
     
     section {
         padding: 1rem;
+    }
+}
+
+.tech-category {
+    margin-bottom: 1.5rem;
+}
+
+.tech-category h3 {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tech-category p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.skills ul li strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* SEO Optimization - Ensure text contrast meets WCAG guidelines */
+:root {
+    --text-primary: #2c3e50;
+    --text-secondary: #34495e;
+}
+
+[data-theme="dark"] {
+    --text-primary: #ecf0f1;
+    --text-secondary: #bdc3c7;
+}
+
+/* Improve accessibility */
+a:focus, button:focus {
+    outline: 2px solid var(--text-primary);
+    outline-offset: 2px;
+}
+
+/* Ensure proper text sizing */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    p, li {
+        font-size: 1rem;
     }
 } 

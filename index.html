@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haroon Dilshad | Staff Engineer</title>
+    <title>Haroon Dilshad - Staff Engineer | Full Stack Developer in Berlin</title>
+    <meta name="description" content="Haroon Dilshad is a Staff Software Engineer with 9+ years of experience in developing scalable solutions. Expertise in cloud architecture, leadership, and full-stack development.">
+    <meta name="keywords" content="Haroon Dilshad, Staff Engineer, Software Engineer, Full Stack Developer, Berlin, Cloud Architecture, AWS, Azure">
+    <meta name="author" content="Haroon Dilshad">
+    <meta property="og:title" content="Haroon Dilshad - Staff Engineer | Full Stack Developer">
+    <meta property="og:description" content="Staff Software Engineer with 9+ years of experience in developing scalable, user-centric solutions. Based in Berlin.">
+    <meta property="og:image" content="https://haroondilshad.com/profile.jpeg">
+    <meta property="og:url" content="https://haroondilshad.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://haroondilshad.com">
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Haroon Dilshad",
+      "jobTitle": "Staff Engineer",
+      "image": "https://haroondilshad.com/profile.jpeg",
+      "url": "https://haroondilshad.com",
+      "sameAs": [
+        "https://linkedin.com/in/haroondilshad",
+        "https://github.com/haroondilshad"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HeartbeatMed"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Berlin",
+        "addressCountry": "Germany"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "SEECS - NUST"
+      }
+    }
+    </script>
 </head>
 <body>
     <div class="theme-switch">
@@ -17,16 +55,16 @@
             </svg>
         </button>
     </div>
-    <main class="container">
+    <main class="container" itemscope itemtype="http://schema.org/Person">
         <header>
             <div class="profile">
-                <img src="profile.jpeg" alt="Haroon Dilshad" class="profile-img">
-                <h1>Haroon Dilshad</h1>
-                <p class="title">Staff Engineer</p>
+                <img src="profile.jpeg" alt="Haroon Dilshad - Staff Engineer" class="profile-img" itemprop="image">
+                <h1 itemprop="name">Haroon Dilshad</h1>
+                <p class="title" itemprop="jobTitle">Staff Engineer</p>
             </div>
             <div class="contact">
-                <p>📧 <a href="mailto:hello@haroondilshad.com">hello@haroondilshad.com</a></p>
-                <p>📍 Berlin</p>
+                <p>📧 <a href="mailto:hello@haroondilshad.com" itemprop="email">hello@haroondilshad.com</a></p>
+                <p>📍 <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Berlin</span></span></p>
                 <div class="social-links">
                     <a href="https://linkedin.com/in/haroondilshad" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
                         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -68,13 +106,13 @@
 
         <section class="summary">
             <h2>Professional Summary</h2>
-            <p>Staff Software Engineer with 9+ years of experience in developing scalable, user-centric solutions. Skilled in leading teams, optimizing processes, and implementing technical solutions that align with business objectives.</p>
+            <p itemprop="description">Staff Software Engineer with 9+ years of experience in developing scalable, user-centric solutions. Skilled in leading teams, optimizing processes, and implementing technical solutions that align with business objectives.</p>
         </section>
 
         <section class="experience">
             <h2>Experience</h2>
-            <article class="job">
-                <h3>Staff Engineer @ HeartbeatMed Berlin, Germany</h3>
+            <article class="job" itemprop="workExperience" itemscope itemtype="http://schema.org/WorkExperience">
+                <h3 itemprop="jobTitle">Staff Engineer @ <span itemprop="worksFor">HeartbeatMed</span> Berlin, Germany</h3>
                 <p class="duration">Feb 2024—Aug 2024</p>
                 <ul>
                     <li>Implemented end-to-end and integration testing strategies, improving overall product quality and reducing bug discovery time.</li>
@@ -84,8 +122,8 @@
                 </ul>
             </article>
 
-            <article class="job">
-                <h3>Senior Full Stack Developer & Technical Team Lead @ BuildingMinds GmbH, Berlin, Germany</h3>
+            <article class="job" itemprop="workExperience" itemscope itemtype="http://schema.org/WorkExperience">
+                <h3 itemprop="jobTitle">Senior Full Stack Developer & Technical Team Lead @ <span itemprop="worksFor">BuildingMinds GmbH</span>, Berlin, Germany</h3>
                 <p class="duration">2019—Jan 2024</p>
                 <ul>
                     <li>Architected and led development of a no-code-low-code highly scalable "Generic Connector" platform.</li>
@@ -94,16 +132,16 @@
                 </ul>
             </article>
 
-            <article class="job">
-                <h3>Software Engineer, Caya GmbH., Berlin, Germany (Remote) — 2017-2018</h3>
+            <article class="job" itemprop="workExperience" itemscope itemtype="http://schema.org/WorkExperience">
+                <h3 itemprop="jobTitle">Software Engineer, <span itemprop="worksFor">Caya GmbH.</span>, Berlin, Germany (Remote)</h3>
                 <p class="duration">2017-2018</p>
                 <ul>
                     <li>Caya makes your postal mail digital. I was responsible for creating and maintaining necessary visual and compute components responsible for digitizing the physical mail and making it available to users.</li>
                 </ul>
             </article>
 
-            <article class="job">
-                <h3>Technical Lead, M-Hospitality, Athens, Greece (Remote) — 2019-2019</h3>
+            <article class="job" itemprop="workExperience" itemscope itemtype="http://schema.org/WorkExperience">
+                <h3 itemprop="jobTitle">Technical Lead, <span itemprop="worksFor">M-Hospitality</span>, Athens, Greece (Remote)</h3>
                 <p class="duration">2019-2019</p>
                 <ul>
                     <li>Lead a team of designers and developers to create companion applications for top-rated hotels</li>
@@ -112,8 +150,8 @@
                 </ul>
             </article>
 
-            <article class="job">
-                <h3>Full-Stack Developer, AIRE Services LLC., California, USA Remote — 2016-2017, 2019</h3>
+            <article class="job" itemprop="workExperience" itemscope itemtype="http://schema.org/WorkExperience">
+                <h3 itemprop="jobTitle">Full-Stack Developer, <span itemprop="worksFor">AIRE Services LLC.</span>, California, USA Remote</h3>
                 <p class="duration">2016-2017, 2019</p>
                 <ul>
                     <li>As a core full-stack developer, I was involved in building an application that assists users in finding apt agents in selling real estate.</li>
@@ -122,8 +160,8 @@
                 </ul>
             </article>
 
-            <article class="job">
-                <h3>Independent Contractor, Upwork — 2015-2019</h3>
+            <article class="job" itemprop="workExperience" itemscope itemtype="http://schema.org/WorkExperience">
+                <h3 itemprop="jobTitle">Independent Contractor, Upwork</h3>
                 <p class="duration">2015-2019</p>
                 <ul>
                     <li>100% job success rate throughout my career.</li>
@@ -135,19 +173,36 @@
 
         <section class="skills">
             <h2>Key Strengths</h2>
-            <ul>
-                <li>Cloud Architecture: Event-driven systems, improved scalability (AWS, Azure)</li>
-                <li>Leadership: Cross-functional team management, mentoring</li>
-                <li>DevOps: Automated testing, CI/CD implementation</li>
-                <li>Data: ETL processes, pipeline development, insights generation</li>
-                <li>UX Focus: Intuitive interfaces, efficient backend systems</li>
-                <li>DX (Developer Experience) Focus: Streamlined workflows, tooling optimization</li>
+            <ul itemprop="knowsAbout">
+                <li><strong>Cloud Architecture:</strong> Event-driven systems, improved scalability (AWS, Azure)</li>
+                <li><strong>Technical Leadership:</strong> Cross-functional team management, mentoring</li>
+                <li><strong>DevOps & CI/CD:</strong> Automated testing, continuous integration/deployment</li>
+                <li><strong>Data Engineering:</strong> ETL processes, pipeline development, insights generation</li>
+                <li><strong>User Experience (UX):</strong> Intuitive interfaces, efficient backend systems</li>
+                <li><strong>Developer Experience (DX):</strong> Streamlined workflows, tooling optimization</li>
             </ul>
         </section>
 
         <section class="technologies">
-            <h2>Technologies</h2>
-            <p>AWS Cloud with CloudFormation, Event-Driven Architecture, Docker, PostgreSQL, Grafana, Playwright, TypeScript, Redis, NodeJS, KeyCloak, TypeSense, NX, PgBoss, yarn/berry Monorepo, Azure Cloud, MSA, ELK, Angular, ReactJS, TypeScript, RxJS, Ngxs, NestJS, Java, Mongo, PostgreSQL, Kafka, EventHubs, ETL</p>
+            <h2>Technologies & Tools</h2>
+            <div itemprop="knowsAbout">
+                <div class="tech-category">
+                    <h3>Cloud & Infrastructure</h3>
+                    <p>AWS Cloud, CloudFormation, Azure Cloud, Docker, Kubernetes, Event-Driven Architecture</p>
+                </div>
+                <div class="tech-category">
+                    <h3>Backend & Databases</h3>
+                    <p>NodeJS, NestJS, PostgreSQL, Redis, MongoDB, TypeSense, KeyCloak</p>
+                </div>
+                <div class="tech-category">
+                    <h3>Frontend & UI</h3>
+                    <p>TypeScript, Angular, ReactJS, RxJS, Ngxs</p>
+                </div>
+                <div class="tech-category">
+                    <h3>DevOps & Monitoring</h3>
+                    <p>Grafana, Playwright, NX, PgBoss, ELK Stack, Kafka, EventHubs</p>
+                </div>
+            </div>
         </section>
 
         <section class="education">
