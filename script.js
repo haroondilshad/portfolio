@@ -1,33 +1,26 @@
-// Check for saved theme preference, otherwise use system preference
-const getPreferredTheme = () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        return savedTheme;
-    }
+// Get current system theme preference
+const getSystemTheme = () => {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
 
 // Apply theme to document
 const applyTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
 };
 
-// Initialize theme
-applyTheme(getPreferredTheme());
+// Initialize theme based on system preference
+applyTheme(getSystemTheme());
 
-// Theme toggle button functionality
+// Theme toggle button functionality (toggle between light and dark regardless of system)
 document.getElementById('themeToggle').addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     applyTheme(newTheme);
 });
 
-// Listen for system theme changes
+// Always listen for system theme changes and apply them
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (!localStorage.getItem('theme')) {
-        applyTheme(e.matches ? 'dark' : 'light');
-    }
+    applyTheme(e.matches ? 'dark' : 'light');
 });
 
 // PDF viewer toggle functionality
