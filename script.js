@@ -31,4 +31,14 @@ togglePdfBtn.addEventListener('click', () => {
     const isExpanded = togglePdfBtn.getAttribute('aria-expanded') === 'true';
     togglePdfBtn.setAttribute('aria-expanded', !isExpanded);
     pdfContainer.hidden = isExpanded;
+});
+
+// Calendar link smooth scrolling
+document.querySelector('a[href="#booking-calendar"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const calendarSection = document.getElementById('booking-calendar');
+    
+    // Scroll to calendar section with smooth behavior
+    calendarSection.scrollIntoView({ behavior: 'smooth' });
 }); 

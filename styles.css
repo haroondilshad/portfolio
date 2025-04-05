@@ -653,4 +653,55 @@ a:focus, button:focus {
 
 .summary p:hover::before {
     transform: scaleX(1);
+}
+
+/* Calendar Section Styles */
+.calendar-section {
+    margin-bottom: 0;
+    padding: 1.8rem 1.8rem 0 1.8rem;
+    background: var(--secondary-bg);
+    border: 3px solid var(--border);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 100%;
+}
+
+.calendar-header {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+}
+
+.calendar-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    transform: rotate(-0.5deg);
+    padding: 0.3rem 0.6rem;
+}
+
+.calendar-section h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5rem;
+    background: var(--accent);
+    bottom: 0.1rem;
+    left: 0;
+    z-index: -1;
+}
+
+/* Media queries for responsive calendar */
+@media (max-width: 768px) {
+    .calendar-section {
+        padding: 1rem 1rem 0 1rem;
+    }
+}
+
+/* Smooth scroll behavior for calendar link */
+html {
+    scroll-behavior: smooth;
 } 

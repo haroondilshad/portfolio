@@ -91,6 +91,11 @@
                             <path d="M10 13H8v5h2v-5zm4 0h-2v5h2v-5zm4 0h-2v5h2v-5z"/>
                         </svg>
                     </a>
+                    <a href="#booking-calendar" class="social-link" aria-label="Book a meeting with me">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5v-5z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </header>
@@ -271,6 +276,42 @@
             </div>
         </section>
     </main>
+
+    <section id="booking-calendar" class="calendar-section">
+        <div class="calendar-header">
+            <h2>Book a Meeting</h2>
+        </div>
+        <!-- Cal inline embed code begins -->
+        <div style="width:100%;height:600px;overflow:visible" id="my-cal-inline"></div>
+        <script type="text/javascript">
+          (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", "15min", {origin:"https://cal.com"});
+
+          Cal.ns["15min"]("inline", {
+            elementOrSelector:"#my-cal-inline",
+            config: {"layout":"month_view","theme":"auto"},
+            calLink: "haroon-dilshad/15min",
+          });
+
+          Cal.ns["15min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#ff3c00"},"dark":{"cal-brand":"#1a9cb0"}},"hideEventTypeDetails":false,"layout":"month_view"});
+          </script>
+          <!-- Cal inline embed code ends -->
+        <style>
+          /* Hide extra space from Cal.com attribution */
+          .cal-powered-by {
+            display: none !important;
+          }
+        </style>
+    </section>
+    <!-- Cal floating-popup embed code begins -->
+    <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "15min", {origin:"https://cal.com"});
+
+    Cal.ns["15min"]("floatingButton", {"calLink":"haroon-dilshad/15min","config":{"layout":"month_view"}}); 
+    Cal.ns["15min"]("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#ff3c00"},"dark":{"cal-brand":"#1a9cb0"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+    <!-- Cal floating-popup embed code ends -->
     <script src="script.js"></script>
 </body>
 </html> 
