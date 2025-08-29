@@ -2,7 +2,7 @@ name: Deploy Hugo to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "feat/hugo-migration"]
   workflow_dispatch:
 
 permissions:
