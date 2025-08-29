@@ -1,0 +1,129 @@
+baseURL = "https://haroondilshad.com"
+languageCode = "en-us"
+title = "Haroon Dilshad - Staff Engineer | Full Stack Developer"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  defaultTheme = "auto"
+  ShowBreadCrumbs = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  mainSections = ["blog"]
+  ShowShareButtons = false
+  ShowToc = true
+  TocOpen = false
+  ShowCodeCopyButtons = true
+  
+  # Profile mode for homepage
+  [params.profileMode]
+    enabled = true
+    title = "Haroon Dilshad"
+    subtitle = "Staff Engineer | Full Stack Developer in Berlin"
+    imageUrl = "profile.jpeg"
+    imageTitle = "Haroon Dilshad"
+    imageWidth = 180
+    imageHeight = 180
+    
+    [[params.profileMode.buttons]]
+      name = "Experience"
+      url = "/experience"
+    
+    [[params.profileMode.buttons]]
+      name = "Portfolio"
+      url = "/portfolio"
+    
+    [[params.profileMode.buttons]]
+      name = "Blog"
+      url = "/blog"
+    
+    [[params.profileMode.buttons]]
+      name = "Resume"
+      url = "/resume.pdf"
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    threshold = 0.4
+    keys = ["title", "permalink", "summary", "content"]
+
+  [params.editPost]
+    URL = "https://github.com/haroondilshad/haroondilshad.github.io/edit/main"
+    Text = "Improve this page"
+    appendFilePath = true
+
+  [params.homeInfoParams]
+    Title = "Welcome to my portfolio"
+    Content = "Staff Software Engineer with 9+ years of experience in developing scalable, user-centric solutions. Skilled in leading teams, optimizing processes, and implementing technical solutions that align with business objectives."
+
+# Related content configuration
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+
+  [[related.indices]]
+    name = "keywords"
+    weight = 40
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+[menu]
+  [[menu.main]]
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+  [privacy.x]
+    disabled = false
+    enableDNT = true
+    simple = true
+  [privacy.instagram]
+    disabled = false
+    simple = true
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.x]
+    disableInlineCSS = true

@@ -1,3 +1,12 @@
+# Hugo default output directory
+/public/
+
+# Hugo build lock file
+.hugo_build.lock
+
+# Hugo resources folder
+/resources/
+
 .DS_Store
 node_modules/
 .env
@@ -6,3 +15,7 @@ node_modules/
 *.log 
 local-tools
 .cursorrules
+scratchpad
+
+# Hugo packages
+hugo_extended_*.tar.gz

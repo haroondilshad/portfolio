@@ -1,0 +1,233 @@
+/* Custom styles for Haroon Dilshad portfolio */
+/* Neo-brutalist design elements integrated with PaperMod */
+
+:root {
+    /* Light mode (neo-brutalist) */
+    --bg: #f5f5f5;
+    --text: #111111;
+    --accent: #ff3c00;
+    --secondary-bg: #ffffff;
+    --border: #000000;
+    --box-shadow: 5px 5px 0px #000000;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --highlight: #fff200;
+}
+
+[data-theme="dark"] {
+    /* Dark mode (neo-brutalist) */
+    --bg: #121212;
+    --text: #e0e0e0;
+    --accent: #ff6d00;
+    --secondary-bg: #1e1e1e;
+    --border: #999999;
+    --box-shadow: 5px 5px 0px #999999;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --highlight: #1a9cb0;
+}
+
+/* Override PaperMod variables with custom theme */
+.main {
+    font-family: 'Space Grotesk', 'Courier New', monospace;
+}
+
+/* Custom profile styling for homepage */
+.profile-container {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: var(--secondary-bg);
+    border: 3px solid var(--border);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0px var(--border);
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 0;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    border: 3px solid var(--border);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.profile-container:hover .profile-image {
+    transform: rotate(2deg);
+}
+
+/* Enhanced post styling */
+.post-entry {
+    border: 3px solid var(--border);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: var(--secondary-bg);
+}
+
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 8px 8px 0px var(--border);
+}
+
+/* Custom button styling */
+.button-brutal {
+    background: var(--secondary-bg);
+    border: 3px solid var(--border);
+    color: var(--text);
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 0.5rem;
+}
+
+.button-brutal:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: var(--text);
+}
+
+.button-brutal:active {
+    transform: translateY(0);
+    box-shadow: 2px 2px 0px var(--border);
+}
+
+/* Section headers with brutal styling */
+.section-header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    transform: rotate(-0.5deg);
+    padding: 0.3rem 0.6rem;
+}
+
+.section-header::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5rem;
+    background: var(--accent);
+    bottom: 0.1rem;
+    left: 0;
+    z-index: -1;
+}
+
+/* Enhanced list styling */
+.brutal-list li {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    border-left: 3px solid var(--accent);
+    transition: padding-left 0.2s ease;
+}
+
+.brutal-list li:hover {
+    padding-left: 1rem;
+}
+
+/* Skill/Tech category styling */
+.tech-category {
+    margin-bottom: 1.8rem;
+    padding: 1rem;
+    border: 2px solid var(--border);
+    background: var(--bg);
+    transform: rotate(0.5deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-category:hover {
+    transform: rotate(0deg) scale(1.02);
+    box-shadow: 4px 4px 0px var(--border);
+}
+
+.tech-category:nth-child(even) {
+    transform: rotate(-0.5deg);
+}
+
+.tech-category:nth-child(even):hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.tech-category h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    background-color: var(--highlight);
+    transform: rotate(-1deg);
+}
+
+/* Enhanced search styling */
+.search-container {
+    background: var(--secondary-bg);
+    border: 3px solid var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Calendar integration styling */
+.calendar-section {
+    background: var(--secondary-bg);
+    border: 3px solid var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .section-header {
+        font-size: 1.8rem;
+    }
+    
+    .tech-category {
+        transform: rotate(0deg);
+    }
+    
+    .tech-category:hover {
+        transform: scale(1.01);
+    }
+}
+
+/* Improve accessibility */
+a:focus, button:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Ensure proper contrast */
+.post-meta {
+    color: var(--text-secondary);
+}
+
+/* Enhanced navigation */
+.main-nav {
+    border-bottom: 3px solid var(--border);
+}
+
+/* Custom pagination */
+.pagination {
+    border: 3px solid var(--border);
+    background: var(--secondary-bg);
+    box-shadow: var(--box-shadow);
+}
