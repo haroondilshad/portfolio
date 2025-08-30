@@ -51,9 +51,9 @@ enableRobotsTXT = true
     keys = ["title", "permalink", "summary", "content"]
 
   [params.editPost]
-    URL = "https://github.com/haroondilshad/haroondilshad.github.io/edit/main"
+    URL = "https://haroondilshad.com/admin/#/collections/blog/entries"
     Text = "Improve this page"
-    appendFilePath = true
+    appendFilePath = false
 
   [params.homeInfoParams]
     Title = "Welcome to my portfolio"
