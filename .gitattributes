@@ -1,0 +1,5 @@
+# Better diff display for markdown files
+*.md diff=markdown
+
+# Treat YAML front matter sections specially  
+content/**/*.md diff=markdown
