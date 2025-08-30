@@ -2,7 +2,7 @@ backend:
   name: github
   repo: haroondilshad/portfolio
   branch: main
-  open_authoring: false
+  open_authoring: true
   base_url: https://auth.haroondilshad.com
   auth_endpoint: auth
 
