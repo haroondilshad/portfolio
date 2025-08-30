@@ -46,8 +46,8 @@
               public_folder: '/img',
               collections: [
                 {
-                  name: 'blog_posts',
-                  label: 'Blog Posts',
+                  name: 'blog',
+                  label: 'Blog',
                   folder: 'content/blog',
                   create: true,
                   slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
@@ -56,24 +56,27 @@
                     { label: 'Publish Date', name: 'date', widget: 'datetime' },
                     { label: 'Description', name: 'description', widget: 'string' },
                     { label: 'Tags', name: 'tags', widget: 'list', required: false },
+                    { label: 'Keywords', name: 'keywords', widget: 'list', required: false },
                     { label: 'Author', name: 'author', widget: 'string', default: 'Haroon Dilshad' },
                     { label: 'Body', name: 'body', widget: 'markdown' }
                   ]
                 },
                 {
-                  name: 'portfolio_items',
-                  label: 'Portfolio Items',
+                  name: 'portfolio',
+                  label: 'Portfolio',
                   folder: 'content/portfolio',
                   create: true,
                   slug: '{{slug}}',
                   fields: [
                     { label: 'Title', name: 'title', widget: 'string' },
                     { label: 'Description', name: 'description', widget: 'string' },
+                    { label: 'Tags', name: 'tags', widget: 'list', required: false },
+                    { label: 'Featured Image', name: 'image', widget: 'image', required: false },
                     { label: 'Body', name: 'body', widget: 'markdown' }
                   ]
                 },
                 {
-                  name: 'experience_items',
+                  name: 'experience',
                   label: 'Experience',
                   folder: 'content/experience',
                   create: true,
@@ -82,6 +85,22 @@
                     { label: 'Title', name: 'title', widget: 'string' },
                     { label: 'Description', name: 'description', widget: 'string' },
                     { label: 'Body', name: 'body', widget: 'markdown' }
+                  ]
+                },
+                {
+                  name: 'pages',
+                  label: 'Pages',
+                  files: [
+                    {
+                      label: 'Homepage',
+                      name: 'homepage',
+                      file: 'content/_index.md',
+                      fields: [
+                        { label: 'Title', name: 'title', widget: 'string' },
+                        { label: 'Description', name: 'description', widget: 'string' },
+                        { label: 'Body', name: 'body', widget: 'markdown' }
+                      ]
+                    }
                   ]
                 }
               ]
