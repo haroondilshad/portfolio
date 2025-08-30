@@ -3,7 +3,8 @@ backend:
   repo: haroondilshad/haroondilshad.github.io
   branch: main
   open_authoring: true
-  # base_url will be added when Cloudflare Worker is set up
+  base_url: https://auth.haroondilshad.com
+  auth_endpoint: auth
 
 publish_mode: editorial_workflow
 media_folder: static/img
