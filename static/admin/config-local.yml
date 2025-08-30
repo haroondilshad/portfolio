@@ -1,19 +1,9 @@
+# Local development configuration for Decap CMS
+# This bypasses OAuth for local testing
 backend:
-  name: github
-  repo: haroondilshad/haroondilshad.github.io
-  branch: main
-  open_authoring: true
-  base_url: https://auth.haroondilshad.com
-  auth_endpoint: auth
+  name: test-repo
+  login: false
 
-# Uncomment below for local development (comment out the above backend)
-# backend:
-#   name: test-repo
-#   login: false
-
-# local_backend: true  # Disabled for production - use dev.html for local development
-
-publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
@@ -42,16 +32,6 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: "experience"
-    label: "Experience"
-    folder: "content/experience"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages"

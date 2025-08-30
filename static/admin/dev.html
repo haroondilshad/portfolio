@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Content Manager - Development</title>
+</head>
+<body>
+  <div id="status">Loading CMS...</div>
+  
+  <script>
+    window.CMS_MANUAL_INIT = true;
+    // Completely disable any config loading
+    window.CMS_CONFIG_URL = null;
+    window.CMS_ENV = 'development';
+    
+    // Override fetch to prevent config.yml loading
+    const originalFetch = window.fetch;
+    window.fetch = function(...args) {
+      const url = args[0];
+      if (typeof url === 'string' && url.includes('config.yml')) {
+        console.log('Blocked config.yml loading for dev environment');
+        return Promise.reject(new Error('Config loading disabled in dev mode'));
+      }
+      return originalFetch.apply(this, args);
+    };
+  </script>
+  
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  
+  <script>
+    // Wait for CMS to load then initialize
+    function initializeCMS() {
+      if (typeof CMS !== 'undefined') {
+        document.getElementById('status').textContent = 'Initializing CMS...';
+        
+        try {
+          CMS.init({
+            config: {
+              backend: {
+                name: 'test-repo',
+                login: false
+              },
+              media_folder: 'static/img',
+              public_folder: '/img',
+              collections: [
+                {
+                  name: 'blog',
+                  label: 'Blog',
+                  folder: 'content/blog',
+                  create: true,
+                  slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+                  fields: [
+                    { label: 'Title', name: 'title', widget: 'string' },
+                    { label: 'Publish Date', name: 'date', widget: 'datetime' },
+                    { label: 'Description', name: 'description', widget: 'string' },
+                    { label: 'Tags', name: 'tags', widget: 'list', required: false },
+                    { label: 'Keywords', name: 'keywords', widget: 'list', required: false },
+                    { label: 'Author', name: 'author', widget: 'string', default: 'Haroon Dilshad' },
+                    { label: 'Body', name: 'body', widget: 'markdown' }
+                  ]
+                },
+                {
+                  name: 'portfolio',
+                  label: 'Portfolio',
+                  folder: 'content/portfolio',
+                  create: true,
+                  slug: '{{slug}}',
+                  fields: [
+                    { label: 'Title', name: 'title', widget: 'string' },
+                    { label: 'Description', name: 'description', widget: 'string' },
+                    { label: 'Tags', name: 'tags', widget: 'list', required: false },
+                    { label: 'Featured Image', name: 'image', widget: 'image', required: false },
+                    { label: 'Body', name: 'body', widget: 'markdown' }
+                  ]
+                },
+                {
+                  name: 'experience',
+                  label: 'Experience',
+                  folder: 'content/experience',
+                  create: true,
+                  slug: '{{slug}}',
+                  fields: [
+                    { label: 'Title', name: 'title', widget: 'string' },
+                    { label: 'Description', name: 'description', widget: 'string' },
+                    { label: 'Body', name: 'body', widget: 'markdown' }
+                  ]
+                },
+                {
+                  name: 'pages',
+                  label: 'Pages',
+                  files: [
+                    {
+                      label: 'Homepage',
+                      name: 'homepage',
+                      file: 'content/_index.md',
+                      fields: [
+                        { label: 'Title', name: 'title', widget: 'string' },
+                        { label: 'Description', name: 'description', widget: 'string' },
+                        { label: 'Body', name: 'body', widget: 'markdown' }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          });
+          
+          document.getElementById('status').textContent = 'CMS Loaded Successfully!';
+          setTimeout(() => {
+            document.getElementById('status').style.display = 'none';
+          }, 2000);
+          
+        } catch (error) {
+          document.getElementById('status').textContent = 'Error: ' + error.message;
+          console.error('CMS Init Error:', error);
+        }
+      } else {
+        document.getElementById('status').textContent = 'Waiting for CMS to load...';
+        setTimeout(initializeCMS, 500);
+      }
+    }
+    
+    // Start initialization when page loads
+    document.addEventListener('DOMContentLoaded', initializeCMS);
+  </script>
+  
+  <style>
+    #status {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #007acc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      z-index: 9999;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</body>
+</html>
