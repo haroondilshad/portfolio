@@ -11,6 +11,20 @@
   
   <script>
     window.CMS_MANUAL_INIT = true;
+    // Completely disable any config loading
+    window.CMS_CONFIG_URL = null;
+    window.CMS_ENV = 'development';
+    
+    // Override fetch to prevent config.yml loading
+    const originalFetch = window.fetch;
+    window.fetch = function(...args) {
+      const url = args[0];
+      if (typeof url === 'string' && url.includes('config.yml')) {
+        console.log('Blocked config.yml loading for dev environment');
+        return Promise.reject(new Error('Config loading disabled in dev mode'));
+      }
+      return originalFetch.apply(this, args);
+    };
   </script>
   
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>

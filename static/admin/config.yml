@@ -11,7 +11,7 @@ backend:
 #   name: test-repo
 #   login: false
 
-local_backend: true
+# local_backend: true  # Disabled for production - use dev.html for local development
 
 publish_mode: editorial_workflow
 media_folder: static/img
