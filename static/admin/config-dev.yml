@@ -7,7 +7,7 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
+  - name: "blog_posts"
     label: "Blog Posts"
     folder: "content/blog"
     create: true
@@ -21,7 +21,7 @@ collections:
       - { label: "Author", name: "author", widget: "string", default: "Haroon Dilshad" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "portfolio"
+  - name: "portfolio_items"
     label: "Portfolio Items"
     folder: "content/portfolio"
     create: true
@@ -33,7 +33,7 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "experience"
+  - name: "experience_items"
     label: "Experience"
     folder: "content/experience"
     create: true
