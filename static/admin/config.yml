@@ -3,6 +3,7 @@ backend:
   repo: haroondilshad/portfolio
   branch: main
   open_authoring: true
+  auth_scope: public_repo
   base_url: https://auth.haroondilshad.com
   auth_endpoint: auth
 

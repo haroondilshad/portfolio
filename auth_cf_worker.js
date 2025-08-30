@@ -21,7 +21,7 @@ export default {
     if (url.pathname === '/auth') {
       const clientId = env.GITHUB_CLIENT_ID;
       const redirectUri = `${url.origin}/callback`;
-      const scope = 'repo,user';
+      const scope = 'public_repo,user';
       const state = url.searchParams.get('state') || 'default_state';
       
       const authUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&state=${state}`;
