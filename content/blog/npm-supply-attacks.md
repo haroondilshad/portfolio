@@ -158,7 +158,6 @@ Track evolving impacted‑package lists and IoCs from incident write‑ups on th
 <span style="display:none">[^21][^22][^23][^5][^7][^9]</span>
 
 ## Vulnerable Packages
-Add a table here with the following data:
 
 | Affected Package | Malicious Version(s) |
 | --------------- | -------------------- |
