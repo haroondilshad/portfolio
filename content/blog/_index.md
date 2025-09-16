@@ -9,6 +9,7 @@ Welcome to my technical blog! Here I share insights, learnings, and experiences 
 
 ## Recent Posts
 
+- [Defending Against npm Supply‑Chain Attacks (September 2025)](/blog/npm-supply-attacks)
 Stay tuned for upcoming posts on:
 
 - **Scaling Microservices**: Lessons learned from building highly scalable systems
