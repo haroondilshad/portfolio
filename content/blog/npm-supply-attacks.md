@@ -9,7 +9,7 @@ author: "Haroon Dilshad"
 
 # Defending Against npm Supply‑Chain Attacks (September 2025)
 
-<img src="./image.png"/>
+<img src="/images/npm-security-blog-hero.png"/>
 Developers can significantly reduce risk from npm supply‑chain attacks by default‑denying install scripts, using reproducible installs with lockfiles, preferring signed provenance, applying the Node.js Permission Model, and gating dependency changes in CI, which together contain execution pathways used in recent compromises like the September 2025 chalk/debug and “Shai‑Hulud” waves. In environments touching crypto or other secrets, keep keys off workstations and treat any machine that executed tainted versions as potentially compromised until tokens are rotated and CI/workflows are audited.[^8][^10][^11][^12][^13][^14][^15][^16][^17]
 
 ## What happened in Sep 2025
