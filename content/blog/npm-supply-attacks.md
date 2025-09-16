@@ -157,7 +157,49 @@ Track evolving impacted‑package lists and IoCs from incident write‑ups on th
 - For crypto‑exposed workflows, keep keys in hardware wallets and never in local browser storage.[^16]
 <span style="display:none">[^21][^22][^23][^5][^7][^9]</span>
 
-<div style="text-align: center">⁂</div>
+## Vulnerable Packages
+Add a table here with the following data:
+
+| Affected Package | Malicious Version(s) |
+| --------------- | -------------------- |
+| @ctrl/tinycolor | 4.1.1, 4.1.2          |
+| @ctrl/deluge    | 7.2.2                |
+| angulartics2    | 14.1.2               |
+| @ctrl/golang-template | 1.4.3                |
+| @ctrl/magnet-link | 4.0.4                |
+| @ctrl/ngx-codemirror | 7.0.2                |
+| @ctrl/ngx-csv | 6.0.2                |
+| @ctrl/ngx-emoji-mart | 9.2.2                |
+| @ctrl/ngx-rightclick | 4.0.2                |
+| @ctrl/qbittorrent | 9.7.2                |
+| @ctrl/react-adsense | 2.0.2                |
+| @ctrl/shared-torrent | 6.3.2                |
+| @ctrl/torrent-file | 4.1.2                |
+| @ctrl/transmission | 7.3.1                |
+| @ctrl/ts-base32 | 4.0.2                |
+| encounter-playground | 0.0.5                |
+| json-rules-engine-simplified | 0.2.4                |
+| @nativescript-community/gesturehandler | 2.0.35                |
+| @nativescript-community/sentry | 4.6.43                |
+| @nativescript-community/text | 1.6.13                |
+| @nativescript-community/ui-collectionview | 6.0.6                |
+| @nativescript-community/ui-drawer | 0.1.30                |
+| @nativescript-community/ui-image | 4.5.6                |
+| @nativescript-community/ui-material-bottomsheet | 7.2.72                |
+| @nativescript-community/ui-material-core | 7.2.76                |
+| @nativescript-community/ui-material-core-tabs | 7.2.76                |
+| @nativescript-community/ui-material-tabs | 7.2.76                |
+| ngx-color | 10.0.2                |
+| ngx-toastr | 1.9.0.2                |
+| ngx-trend | 8.0.1                |
+| react-complaint-image | 0.0.35                |
+| react-jsonschema-form-conditionals | 0.3.21                |
+| react-jsonschema-form-extras | 1.0.4                |
+| rxnt-authentication | 0.0.6                |
+| rxnt-healthchecks-nestjs | 1.0.5                |
+| rxnt-kue | 1.0.7                |
+| swc-plugin-component-annotate | 1.9.2                |
+| ts-gaussian | 3.0.6                |
 
 [^1]: https://www.paloaltonetworks.com/blog/cloud-security/npm-supply-chain-attack/
 
