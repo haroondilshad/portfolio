@@ -114,6 +114,14 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.extensions]
+      footnote = true
+      strikethrough = true
+      linkify = true
+      linkifyProtocol = true
+      table = true
+      taskList = true
+      typographer = true
 
 [privacy]
   [privacy.vimeo]

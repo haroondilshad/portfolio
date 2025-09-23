@@ -341,3 +341,51 @@ a:focus, button:focus {
         opacity: 1;
     }
 }
+
+/* Fix for footnote spacing - ensure consecutive footnotes are properly spaced */
+.footnote-ref {
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+.footnote-ref + .footnote-ref {
+    margin-left: 0.2em;
+}
+
+/* Better footnote styling */
+sup .footnote-ref {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+sup .footnote-ref:hover {
+    text-decoration: underline;
+    color: var(--highlight);
+}
+
+/* Footnotes section styling */
+.footnotes {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--border);
+}
+
+.footnotes ol {
+    padding-left: 1.5rem;
+}
+
+.footnotes li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.footnote-backref {
+    margin-left: 0.5em;
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.footnote-backref:hover {
+    text-decoration: underline;
+}
