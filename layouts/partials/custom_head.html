@@ -1,0 +1,16 @@
+<!-- Custom head additions for performance optimizations -->
+
+{{- /* Override favicon URLs to use HTTPS */ -}}
+<link rel="icon" href="{{ site.BaseURL }}favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.BaseURL }}favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.BaseURL }}favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" href="{{ site.BaseURL }}favicon/apple-touch-icon.png">
+<link rel="manifest" href="{{ site.BaseURL }}favicon/site.webmanifest">
+
+{{- /* Preload critical resources for better performance */ -}}
+{{- if eq .Kind "home" }}
+<!-- Preload WebP version for modern browsers -->
+<link rel="preload" href="{{ site.BaseURL }}profile.webp" as="image" type="image/webp" fetchpriority="high">
+<!-- Preload JPEG fallback -->
+<link rel="preload" href="{{ site.BaseURL }}profile.jpeg" as="image" type="image/jpeg" fetchpriority="high">
+{{- end }}

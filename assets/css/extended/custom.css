@@ -231,3 +231,113 @@ a:focus, button:focus {
     background: var(--secondary-bg);
     box-shadow: var(--box-shadow);
 }
+
+/* Floating Action Button for Meeting Scheduling */
+.fab-meeting {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.fab-meeting:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    text-decoration: none;
+    color: white;
+}
+
+.fab-meeting:active {
+    transform: scale(0.95);
+}
+
+.fab-meeting::before {
+    content: '📅';
+    font-size: 24px;
+}
+
+/* Tooltip */
+.fab-meeting::after {
+    content: 'Schedule a Meeting';
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.fab-meeting:hover::after {
+    opacity: 1;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .fab-meeting {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+[data-theme="dark"] .fab-meeting:hover {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .fab-meeting {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .fab-meeting::before {
+        font-size: 20px;
+    }
+    
+    .fab-meeting::after {
+        display: none; /* Hide tooltip on mobile */
+    }
+}
+
+/* Accessibility */
+.fab-meeting:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Animation for entrance */
+.fab-meeting {
+    animation: fabEnter 0.5s ease-out 1s both;
+}
+
+@keyframes fabEnter {
+    0% {
+        transform: scale(0) rotate(180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}

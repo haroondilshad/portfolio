@@ -18,6 +18,14 @@ enableRobotsTXT = true
   TocOpen = false
   ShowCodeCopyButtons = true
   
+  # Assets configuration
+  [params.assets]
+    favicon = "/favicon/favicon.ico"
+    favicon16x16 = "/favicon/favicon-16x16.png"
+    favicon32x32 = "/favicon/favicon-32x32.png"
+    apple_touch_icon = "/favicon/apple-touch-icon.png"
+    safari_pinned_tab = "/favicon/apple-touch-icon.png"
+  
   # Profile mode for homepage
   [params.profileMode]
     enabled = true
