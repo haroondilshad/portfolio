@@ -1,0 +1,28 @@
+{{- with site.Params.profileMode }}
+{{- if .enabled }}
+<div class="profile">
+    {{- with .imageUrl }}
+    <img draggable="false" 
+         src="{{ . | absURL }}" 
+         alt="{{ $.Site.Params.profileMode.imageTitle | default "Profile Image" }}" 
+         height="{{ site.Params.profileMode.imageHeight | default 120 }}"
+         width="{{ site.Params.profileMode.imageWidth | default 120 }}"
+         fetchpriority="high"
+         loading="eager" />
+    {{- end }}
+    <h1>{{ .title | default site.Title | markdownify }}</h1>
+    <span>{{ .subtitle | markdownify }}</span>
+    {{- if .buttons }}
+    <div class="buttons">
+        {{- range .buttons }}
+        <a class="button" href="{{ .url | absLangURL }}" rel="noopener" title="{{ .name }}">
+            <span class="button-inner">
+                {{ .name }}
+            </span>
+        </a>
+        {{- end }}
+    </div>
+    {{- end }}
+</div>
+{{- end }}
+{{- end }}
