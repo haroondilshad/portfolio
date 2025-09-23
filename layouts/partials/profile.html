@@ -2,13 +2,40 @@
 {{- if .enabled }}
 <div class="profile">
     {{- with .imageUrl }}
-    <img draggable="false" 
-         src="{{ . | absURL }}" 
-         alt="{{ $.Site.Params.profileMode.imageTitle | default "Profile Image" }}" 
-         height="{{ site.Params.profileMode.imageHeight | default 120 }}"
-         width="{{ site.Params.profileMode.imageWidth | default 120 }}"
-         fetchpriority="high"
-         loading="eager" />
+    <picture>
+        <!-- WebP format for modern browsers with responsive sizes -->
+        <source 
+            type="image/webp"
+            srcset="{{ "/profile-180.webp" | absURL }} 180w,
+                    {{ "/profile-360.webp" | absURL }} 360w,
+                    {{ "/profile-540.webp" | absURL }} 540w,
+                    {{ "/profile.webp" | absURL }} 800w"
+            sizes="(max-width: 480px) 180px,
+                   (max-width: 768px) 360px,
+                   (max-width: 1200px) 540px,
+                   800px">
+        
+        <!-- JPEG fallback for older browsers with responsive sizes -->
+        <source 
+            type="image/jpeg"
+            srcset="{{ "/profile-180.jpeg" | absURL }} 180w,
+                    {{ "/profile-360.jpeg" | absURL }} 360w,
+                    {{ "/profile-540.jpeg" | absURL }} 540w,
+                    {{ . | absURL }} 800w"
+            sizes="(max-width: 480px) 180px,
+                   (max-width: 768px) 360px,
+                   (max-width: 1200px) 540px,
+                   800px">
+        
+        <!-- Fallback img tag -->
+        <img draggable="false" 
+             src="{{ . | absURL }}" 
+             alt="{{ $.Site.Params.profileMode.imageTitle | default "Profile Image" }}" 
+             height="{{ site.Params.profileMode.imageHeight | default 180 }}"
+             width="{{ site.Params.profileMode.imageWidth | default 180 }}"
+             fetchpriority="high"
+             loading="eager" />
+    </picture>
     {{- end }}
     <h1>{{ .title | default site.Title | markdownify }}</h1>
     <span>{{ .subtitle | markdownify }}</span>
