@@ -1,10 +1,16 @@
 ---
-title: "Welcome to My Technical Blog"
+title: Welcome to My Technical Blog!!
 date: 2024-08-29T10:00:00+02:00
-description: "Introduction to my blog and what you can expect to find here"
-tags: ["welcome", "introduction", "blog"]
-keywords: ["blog", "software engineering", "technical writing"]
-author: "Haroon Dilshad"
+description: Introduction to my blog and what you can expect to find here
+tags:
+  - welcome
+  - introduction
+  - blog
+keywords:
+  - blog
+  - software engineering
+  - technical writing
+author: Haroon Dilshad
 ---
 
 # Welcome to My Technical Blog
