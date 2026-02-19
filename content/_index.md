@@ -21,9 +21,11 @@ I'm passionate about building robust, scalable software solutions that make a re
 
 ## What I Do
 
-- **Cloud Architecture**: Event-driven systems, improved scalability (AWS, Azure)
-- **Technical Leadership**: Cross-functional team management, mentoring
+- **Agentic AI Development**: AI-powered delivery pipelines, MCP server sandboxing, secure agent workflows
+- **Cloud Architecture**: Event-driven systems, improved scalability (AWS, Azure, Oracle Cloud)
+- **Secure Developer Experience**: DevContainers, DevPod, container isolation, supply-chain hardening
+- **Technical Leadership**: Cross-functional team management, mentoring, startup co-founding
 - **DevOps & CI/CD**: Automated testing, continuous integration/deployment
 - **Data Engineering**: ETL processes, pipeline development, insights generation
-- **User Experience (UX)**: Intuitive interfaces, efficient backend systems
+- **Product Thinking**: User-centric design, outcome-driven feature prioritization, intuitive interfaces
 - **Developer Experience (DX)**: Streamlined workflows, tooling optimization
