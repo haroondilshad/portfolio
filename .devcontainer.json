@@ -1,0 +1,62 @@
+{
+  "name": "Shared ToolHive DevContainer",
+  "image": "haroondilshad/ubuntu-devcontainer:latest",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "anysphere.cursorpyright",
+        "golang.Go",
+        "ms-python.python",
+        "dbaeumer.vscode-eslint",
+        "github.vscode-github-actions",
+        "eamodio.gitlens",
+        "ms-vscode.vscode-typescript-next",
+        "firsttris.vscode-jest-runner",
+        "ms-vscode.makefile-tools",
+        "mongodb.mongodb-vscode",
+        "cweijan.vscode-postgresql-client2",
+        "esbenp.prettier-vscode",
+        "Prisma.prisma",
+        "ms-python.debugpy",
+        "mechatroner.rainbow-csv",
+        "tauri-apps.tauri-vscode",
+        "tomoki1207.pdf",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "runArgs": [
+    "--init",
+    "--privileged",
+    "--network=toolhive-external"
+  ],
+  "mounts": [
+    "source=${localEnv:HOME}/.local/share/pnpm,target=/home/vscode/.local/share/pnpm,type=bind",
+    "source=${localEnv:HOME}/.bun/install/cache,target=/home/vscode/.bun/install/cache,type=bind",
+    "source=${localEnv:HOME}/.cursor/skills,target=/home/vscode/.cursor/skills,type=bind"
+  ],
+  "postStartCommand": "/usr/local/share/docker-init.sh",
+  "postCreateCommand": "setup-mcp-config && install-extensions-background && ./setup-ssh-keys.sh",
+  "portsAttributes": {
+    "3000": {
+      "label": "Web App",
+      "onAutoForward": "notify"
+    },
+    "3001": {
+      "label": "Web App Alt",
+      "onAutoForward": "notify"
+    },
+    "1420": {
+      "label": "Tauri Dev",
+      "onAutoForward": "notify"
+    },
+    "1421": {
+      "label": "Tauri HMR",
+      "onAutoForward": "notify"
+    }
+  }
+}

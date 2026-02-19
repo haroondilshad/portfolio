@@ -20,3 +20,6 @@ scratchpad
 # Hugo packages
 hugo_extended_*.tar.gz
 docs
+
+chats/
+setup-ssh-keys.sh
