@@ -1,15 +1,15 @@
 ---
 title: "Haroon Dilshad"
-description: "Staff Software Engineer with 9+ years of experience in developing scalable, user-centric solutions. Based in Berlin, Germany."
+description: "CTO & Co-Founder with 11+ years of experience building scalable, user-centric software. Based in Berlin, Germany."
 ---
 
 # Welcome
 
-Staff Software Engineer with 9+ years of experience in developing scalable, user-centric solutions. Skilled in leading teams, optimizing processes, and implementing technical solutions that align with business objectives.
+CTO & Co-Founder with 11+ years of experience building scalable, user-centric software. From leading distributed engineering teams to leveraging agentic AI for rapid product delivery, I combine deep technical expertise with a founder's lens on shipping fast and shipping right.
 
 ## About Me
 
-I'm passionate about building robust, scalable software solutions that make a real difference. Based in Berlin, I've been working in the tech industry for over 9 years, leading teams and architecting systems that handle millions of users.
+I'm passionate about building robust, scalable software solutions that make a real difference. Based in Berlin, I've been working in the tech industry for over 11 years, co-founding startups, leading teams, and architecting systems that handle millions of users.
 
 ## Quick Links
 

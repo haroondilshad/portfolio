@@ -5,6 +5,14 @@ description: "Professional experience and career history of Haroon Dilshad"
 
 # Professional Experience
 
+## Co-Founder & CTO @ DevNinja / OpsNinja, The Hague, Netherlands (Remote)
+**Nov 2024—Feb 2026**
+
+- Co-founded a dual-brand software consultancy and engineering staffing firm, serving PropTech, FinTech, and AI startups across Europe and the US.
+- Pioneered an agentic AI-driven development methodology that dramatically compressed delivery timelines, cutting both engineering and deployment costs for clients.
+- Delivered end-to-end product builds for a stealth-mode AI platform competing in the private equity intelligence space, from architecture through production launch.
+- Scaled distributed engineering teams and embedded senior talent at high-growth startups to accelerate their go-to-market.
+
 ## Staff Engineer @ HeartbeatMed Berlin, Germany
 **Feb 2024—Aug 2024**
 
@@ -12,6 +20,15 @@ description: "Professional experience and career history of Haroon Dilshad"
 - Implemented preview environment seeding process, reducing setup time from multiple developer hours to minutes.
 - Developed automations for routine tasks i.e. score calculations, resending emails to eligible users etc., increasing team productivity.
 - Architected and implemented spotlight search functionality, improving user experience and search accuracy.
+
+## Open Source Contributor
+**2019—Present**
+
+- Active contributor to [LuLu](https://github.com/objective-see/LuLu) (12k+ stars), the leading open-source macOS firewall by Objective-See.
+- Built [devpod-provider-oracle-cloud](https://github.com/haroondilshad/devpod-provider-oracle-cloud), a DevPod provider enabling one-command cloud development environments on Oracle Cloud Infrastructure.
+- Contributor to [CloudStream](https://github.com/recloudstream/cloudstream) (8.9k+ stars), an open-source Android media streaming platform.
+- Forked and extended [serverless-dns](https://github.com/haroondilshad/serverless-dns) (RethinkDNS), a privacy-first DNS resolver deployable to Cloudflare Workers, Deno Deploy, and Fly.io.
+- Developing [tauri-etcher](https://github.com/haroondilshad/tauri-etcher), a Tauri-based reimagining of Balena Etcher for flashing OS images to SD cards and USB drives.
 
 ## Senior Full Stack Developer & Technical Team Lead @ BuildingMinds GmbH, Berlin, Germany
 **2019—Jan 2024**

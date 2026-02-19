@@ -1,6 +1,6 @@
 baseURL = "https://haroondilshad.com"
 languageCode = "en-us"
-title = "Haroon Dilshad - Staff Engineer | Full Stack Developer"
+title = "Haroon Dilshad - CTO & Co-Founder | Full Stack Engineer"
 theme = "PaperMod"
 enableRobotsTXT = true
 
@@ -8,6 +8,9 @@ enableRobotsTXT = true
   home = ["HTML", "RSS", "JSON"]
 
 [params]
+  [params.author]
+    name = "Haroon Dilshad"
+    email = "hello@haroondilshad.com"
   defaultTheme = "auto"
   ShowBreadCrumbs = true
   ShowReadingTime = true
@@ -30,7 +33,7 @@ enableRobotsTXT = true
   [params.profileMode]
     enabled = true
     title = "Haroon Dilshad"
-    subtitle = "Staff Engineer | Full Stack Developer in Berlin"
+    subtitle = "CTO & Co-Founder | Full Stack Engineer in Berlin"
     imageUrl = "/profile.jpeg"
     imageTitle = "Haroon Dilshad"
     imageWidth = 180
@@ -65,7 +68,7 @@ enableRobotsTXT = true
 
   [params.homeInfoParams]
     Title = "Welcome to my portfolio"
-    Content = "Staff Software Engineer with 9+ years of experience in developing scalable, user-centric solutions. Skilled in leading teams, optimizing processes, and implementing technical solutions that align with business objectives."
+    Content = "CTO & Co-Founder with 11+ years of experience building scalable, user-centric software. From leading distributed engineering teams to leveraging agentic AI for rapid product delivery, I combine deep technical expertise with a founder's lens on shipping fast and shipping right."
 
 # Related content configuration
 [related]
