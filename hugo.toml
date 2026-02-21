@@ -1,6 +1,6 @@
 baseURL = "https://haroondilshad.com"
 languageCode = "en-us"
-title = "Haroon Dilshad - Senior Product Engineer | Full Stack Engineer"
+title = "Haroon Dilshad - Senior Product Engineer"
 theme = "PaperMod"
 enableRobotsTXT = true
 
@@ -33,7 +33,7 @@ enableRobotsTXT = true
   [params.profileMode]
     enabled = true
     title = "Haroon Dilshad"
-    subtitle = "Senior Product Engineer | Full Stack Engineer in Berlin"
+    subtitle = "Senior Product Engineer in Berlin"
     imageUrl = "/profile.jpeg"
     imageTitle = "Haroon Dilshad"
     imageWidth = 180
