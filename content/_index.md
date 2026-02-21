@@ -1,11 +1,11 @@
 ---
 title: "Haroon Dilshad"
-description: "CTO & Co-Founder with 11+ years of experience building scalable, user-centric software. Based in Berlin, Germany."
+description: "Senior Product Engineer with 11+ years of experience building scalable, user-centric software. Based in Berlin, Germany."
 ---
 
 # Welcome
 
-CTO & Co-Founder with 11+ years of experience building scalable, user-centric software. From leading distributed engineering teams to leveraging agentic AI for rapid product delivery, I combine deep technical expertise with a founder's lens on shipping fast and shipping right.
+Senior Product Engineer with 11+ years of experience building scalable, user-centric software. From leading distributed engineering teams to leveraging agentic AI for rapid product delivery, I combine deep technical expertise with a founder's lens on shipping fast and shipping right.
 
 ## About Me
 

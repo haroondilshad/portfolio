@@ -1,6 +1,6 @@
 baseURL = "https://haroondilshad.com"
 languageCode = "en-us"
-title = "Haroon Dilshad - CTO & Co-Founder | Full Stack Engineer"
+title = "Haroon Dilshad - Senior Product Engineer | Full Stack Engineer"
 theme = "PaperMod"
 enableRobotsTXT = true
 
@@ -33,7 +33,7 @@ enableRobotsTXT = true
   [params.profileMode]
     enabled = true
     title = "Haroon Dilshad"
-    subtitle = "CTO & Co-Founder | Full Stack Engineer in Berlin"
+    subtitle = "Senior Product Engineer | Full Stack Engineer in Berlin"
     imageUrl = "/profile.jpeg"
     imageTitle = "Haroon Dilshad"
     imageWidth = 180
@@ -68,7 +68,7 @@ enableRobotsTXT = true
 
   [params.homeInfoParams]
     Title = "Welcome to my portfolio"
-    Content = "CTO & Co-Founder with 11+ years of experience building scalable, user-centric software. From leading distributed engineering teams to leveraging agentic AI for rapid product delivery, I combine deep technical expertise with a founder's lens on shipping fast and shipping right."
+    Content = "Senior Product Engineer with 11+ years of experience building scalable, user-centric software. From leading distributed engineering teams to leveraging agentic AI for rapid product delivery, I combine deep technical expertise with a founder's lens on shipping fast and shipping right."
 
 # Related content configuration
 [related]
