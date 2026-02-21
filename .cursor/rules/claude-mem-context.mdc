@@ -1,0 +1,203 @@
+---
+alwaysApply: true
+description: "Claude-mem context from past sessions (auto-updated)"
+---
+
+# Memory Context from Past Sessions
+
+The following context is from claude-mem, a persistent memory system that tracks your coding sessions.
+
+# [portfolio] recent context, 2026-02-21 10:54pm GMT+1
+
+**Legend:** session-request | 🔴 bugfix | 🟣 feature | 🔄 refactor | ✅ change | 🔵 discovery | ⚖️ decision
+
+**Column Key**:
+- **Read**: Tokens to read this observation (cost to learn it now)
+- **Work**: Tokens spent on work that produced this record ( research, building, deciding)
+
+**Context Index:** This semantic index (titles, types, files, tokens) is usually sufficient to understand past work.
+
+When you need implementation details, rationale, or debugging context:
+- See "Querying Past Work" section below for curl commands to fetch full observations
+- Critical types ( bugfix, decision) often need detailed fetching
+- Trust this index over re-reading code for past decisions and learnings
+
+**Context Economics**:
+- Loading: 50 observations (13,280 tokens to read)
+- Work investment: 481,671 tokens spent on research, building, and decisions
+- Your savings: 97% reduction from reuse
+
+### Feb 21, 2026
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #658 | 10:20 PM | ✅ | Pandoc document converter installed |  |  |
+| #659 | " | 🔵 | Document processing tool environment assessment |  |  |
+| #660 | " | ✅ | Global docx npm package installed |  |  |
+| #661 | 10:21 PM | 🔵 | LibreOffice already installed but may not be accessible |  |  |
+| #662 | " | 🔵 | LibreOffice soffice binary located |  |  |
+
+**static/generate-resume.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #663 | 10:22 PM | 🟣 | Resume generation script with modern two-column design |  |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #664 | " | 🔵 | Script fails due to missing local docx dependency |  |  |
+| #665 | " | 🔵 | Global docx package location confirmed |  |  |
+| #666 | " | ✅ | Resume generation succeeded but overwrote original file |  |  |
+| #667 | 10:23 PM | ✅ | PDF version of redesigned resume generated |  |  |
+
+**static/resume.pdf**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #668 | " | ✅ | PDF resume copied to standard filename |  |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #669 | 10:24 PM | ✅ | Poppler utilities installed |  |  |
+| #670 | " | ✅ | Resume PDF converted to JPEG preview images |  |  |
+| #671 | " | ✅ | Open source contributions formatting improved |  |  |
+| #672 | " | ✅ | Bullet point text refined for conciseness |  |  |
+| #673 | " | ✅ | Updated resume generated with refined content |  |  |
+
+**static/resume.pdf**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #674 | 10:25 PM | ✅ | Updated resume PDF and preview images generated |  |  |
+
+**General**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #676 | " | ✅ | Resume generation script moved to project root |  |  |
+| #677 | " | ✅ | Duplicate PDF removed |  |  |
+
+**generate-resume.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #678 | 10:29 PM | 🟣 | Fresh resume design implemented with left sidebar layout |  |  |
+| #679 | " | 🟣 | Fresh resume design with left sidebar implemented |  |  |
+| #680 | " | 🟣 | Fresh resume design with left sidebar implemented |  |  |
+| #681 | " | 🟣 | Fresh resume design implemented with left sidebar layout |  |  |
+| #682 | 10:30 PM | 🟣 | Fresh resume design with left sidebar layout completed |  |  |
+| #683 | " | 🟣 | Fresh resume design with left sidebar completed and generated |  |  |
+
+**generate-resume-v2.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #684 | 10:33 PM | 🟣 | Alternative resume design with skill pills and navy header |  |  |
+
+**generate-resume-v3.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #685 | 10:34 PM | 🟣 | Third resume design variant with navy sidebar created |  |  |
+
+**static/Resume - Variation A.docx**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #686 | " | 🟣 | Three distinct resume designs generated and converted to PDF |  |  |
+
+**generate-resume.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #689 | 10:42 PM | ✅ | Updated job title in resume generator script |  |  |
+| #690 | " | ✅ | Updated professional summary in resume generator |  |  |
+| #691 | " | ✅ | Updated technical skills in resume generator |  |  |
+
+**generate-resume-v2.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #692 | " | ✅ | Updated job title in resume generator v2 |  |  |
+| #693 | " | ✅ | Updated professional summary in resume generator v2 |  |  |
+| #694 | " | ✅ | Updated technical skills in resume generator v2 |  |  |
+
+**static/resume.pdf**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #688 | " | ✅ | Resume update and redesign requested |  |  |
+
+**generate-resume-v3.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #695 | " | ✅ | Updated job title in resume generator v3 |  |  |
+| #696 | " | ✅ | Updated professional summary in resume generator v3 |  |  |
+| #697 | " | ✅ | Updated technical skills in resume generator v3 |  |  |
+| #698 | 10:43 PM | ✅ | Added sidebar spacers to resume generator v3 |  |  |
+
+**static/Standard - Resume Staff Software Engnineer.docx**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #699 | " | 🔴 | Generated all resume variations |  |  |
+
+**static/Standard - Resume Staff Software Engnineer.pdf**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #700 | " | 🔴 | Converted resumes to PDF and created default copy |  |  |
+
+**../../tmp/var-b-fix-1.jpg**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #701 | " | 🔴 | Generated JPEG previews from PDF resumes |  |  |
+
+**generate-resume-v3.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #702 | 10:44 PM | ✅ | Adjusted sidebar spacer count and spacing in resume generator v3 |  |  |
+
+**static/Resume - Variation B.docx**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #703 | 10:45 PM | 🔴 | Regenerated and converted resume variation B with adjusted layout |  |  |
+
+**generate-resume-v3.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #704 | 10:46 PM | ✅ | Simplified sidebar spacer in resume generator v3 |  |  |
+
+**static/Resume - Variation B.docx**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #705 | 10:47 PM | 🔴 | Regenerated resume variation B with large spacer - now two pages |  |  |
+
+**generate-resume-v3.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #706 | " | ✅ | Adjusted sidebar spacer size in resume generator v3 |  |  |
+
+**static/Resume - Variation B.docx**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #707 | " | 🔴 | Regenerated resume variation B with calibrated spacer |  |  |
+
+**generate-resume.js**
+| ID | Time | T | Title | Read | Work |
+|----|------|---|-------|------|------|
+| #708 | 10:52 PM | ✅ | Updated all resume variations with new role and skills |  |  |
+| #709 | 10:53 PM | 🟣 | Resume portfolio completed with three distinct designs |  |  |
+
+
+Access 482k tokens of past research & decisions for just 13,280t. See "Querying Past Work" below to fetch by ID or search semantically.
+
+---
+
+## Querying Past Work (Deep Search)
+
+When you need implementation details, rationale, or debugging context beyond what's shown above, query the claude-mem worker API (port 37777) via shell:
+
+**Browse observations** (most reliable, always works):
+`curl -s "http://127.0.0.1:37777/api/observations?project=portfolio&limit=20"`
+
+**Fetch specific observations by ID** (~500-1000 tokens each):
+`curl -s -X POST http://127.0.0.1:37777/api/observations/batch -H "Content-Type: application/json" -d '{"ids":[<ID1>,<ID2>]}'`
+
+**Semantic search** (requires Chroma vector DB to be running):
+`curl -s "http://127.0.0.1:37777/api/search?query=<term>&project=portfolio&limit=20"`
+
+**Save a memory** (persist important context for future sessions):
+`curl -s -X POST http://127.0.0.1:37777/api/memory/save -H "Content-Type: application/json" -d '{"text":"...","project":"portfolio"}'`
+
+The context summary above is usually sufficient. Use deep queries only when you need specific implementation details or debugging history.
