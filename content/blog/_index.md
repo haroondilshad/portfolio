@@ -9,6 +9,7 @@ Welcome to my technical blog! Here I share insights, learnings, and experiences 
 
 ## Recent Posts
 
+- [Every Cursor message was costing me 14 GB of backup space](/blog/cursor-backup-space)
 - [Defending Against npm Supply‑Chain Attacks (September 2025)](/blog/npm-supply-attacks)
 Stay tuned for upcoming posts on:
 
